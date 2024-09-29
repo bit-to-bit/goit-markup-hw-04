@@ -162,6 +162,7 @@ img {
 }
 
 .team-socials {
+    justify-content: center;
     gap: 24px;
 }
 
@@ -188,7 +189,7 @@ img {
     border:none;
     border-radius: 50%;
     background-color: var(--cl-primary-brand);
-    transition-property: background-color, border-color;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -196,7 +197,18 @@ img {
 .socials-link:hover,
 .socials-link:focus {
     background-color: var(--cl-success);
-    border-color: rgb(var(--cl-accent) / 10%);
+}
+
+.team-socials-link{
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.team-socials-link:hover,
+.team-socials-link:focus {
+    background-color: var(--cl-pressed-state);
 }
 
 .socials-icon {
@@ -237,6 +249,7 @@ img {
 
 .header{
     border-bottom: 1px solid var(--cl-accent);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container-header {
@@ -282,7 +295,7 @@ img {
 .menu-item::after {
     content: '';
     position: absolute;
-    bottom: 0px;
+    bottom: -1px;
     left: 0;
     display: block;
     width: 100%;
@@ -368,6 +381,8 @@ text-align: center;
 .feature-icon-wrapper{
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 112px;
     padding: 24px 0px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
@@ -402,8 +417,7 @@ text-align: center;
 }
 
 .team-txt-wrapper{
-    padding: 32px 16px;
-
+    padding: 32px 0px;
 }
 
 /* #endregion */
@@ -417,7 +431,16 @@ text-align: center;
 }
 
 .portfolio-item{
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
+.portfolio-item:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
 .portfolio-img-wrapper {
     position: relative;
